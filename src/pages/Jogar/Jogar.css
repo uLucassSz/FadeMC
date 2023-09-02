@@ -1,0 +1,228 @@
+.level.fiveSeven{
+    border-color: rgba(246, 147, 31, 0.75);;
+}
+.level.eightNine{
+    border-color: #F00;
+}
+.rainbow {
+    border: 0 !important;
+    z-index: 0;
+    --b: 3px;
+    --c: linear-gradient(rgba(255, 0, 0, 1), rgba(253, 24, 146, 1), rgba(184, 39, 252, 0.65), rgba(44, 144, 252, 0.75), rgba(85, 251, 26, 0.72), rgba(236, 248, 54, 0.69), rgba(246, 147, 31, 0.75));
+    background: transparent;
+}
+.rainbow:after {
+    content: "";
+    display: inline-block;
+    padding-top: 100%;
+}
+.rainbow:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--c, linear-gradient(to right, #9c20aa, #fb3570));
+    padding: var(--b);
+    border-radius: 50%;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.pagePlay{
+    margin-top: 2.8125rem;
+    display: flex;
+    gap: 70px;
+}
+.pagePlay .left-container{
+    max-width: 330px;
+    width: 100%;
+}
+.profile-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: var(--box-color);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+.profileImg{
+    width: 145px;
+    height: 145px;
+    border-radius: 5px;
+}
+.name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.25rem;
+}
+.name span{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+.level{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: #292929;
+    border: 3px solid rgba(44, 144, 252, 0.75);
+    border-radius: 50%;
+}
+.level span{
+    font-size: .9375rem;
+    font-weight: 700;
+}
+.stats{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 1.25rem;
+}
+.stat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .9375rem;
+}
+.stat span{
+    color: #ADADAD;
+}
+.stat p{
+    color: #fff;
+}
+.pagePlay .right-container{
+    flex-grow: 1;
+}
+.card-actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1.5625rem;
+    width: 100%;
+    background: var(--box-color);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+.search h6{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: .625rem;
+}
+.search input{
+    width: 355px;
+    padding: .5rem .625rem;
+    background: #292929;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+}
+.search input::placeholder{
+    font-size: .875rem;
+    color: #777777;
+}
+.createLobby{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #098606;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 3px rgba(9, 134, 6, 0.30);
+    padding: .625rem 1.5625rem;
+    border: 0;
+    outline: 0;
+    font-size: .9375rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+.createLobby .bx{
+    font-size: 1.25rem;
+
+}
+.play-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.play{
+    position: relative;
+    padding: 15px;
+    width: fit-content;
+    background: var(--box-color);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.levelTotal{
+    position: absolute !important;
+    left: 8px;
+    top: 8px;
+}
+.ownerImg{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.playName{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: .5rem 0 .9375rem;
+}
+.playerImg{
+    border-radius: 50%;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(5,30px);
+    gap: 15px;
+}
+.play .level {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #292929;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.play .level span{
+    font-size: .8125rem;
+    font-weight: 700;
+}
+.btnJoin{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    background: #098606;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 3px rgba(9, 134, 6, 0.30);
+    padding: 8px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: .9375rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 1.25rem;
+}
+.btnJoin .bx{
+    font-size: 20px;
+}

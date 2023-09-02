@@ -1,0 +1,149 @@
+.punicoesPage{
+    margin-top: 2.8125rem;
+}
+.punicoesContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.punicoesContainer .left-container{
+    max-width: 850px;
+    width: 100%;
+}
+.punicoesBox{
+    background: var(--box-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+}
+.punicaoContainer{
+    padding: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.punicaoBox{
+    background: #232323;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 8px;
+    padding: .625rem 1.5625rem;
+}
+.punicaoBox.search{
+    cursor: pointer;
+}
+.punicaoHeader{
+    padding: .9375rem 1.5625rem;
+    border-bottom: 1px solid #303030;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.punicaoHeader span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.punicaoBox{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.punicaoBox .time{
+    display: flex;
+    gap: 5px;
+}
+.punicaoBox .time .bx{
+    color: #adadad;
+    font-size: 1.25rem;
+}
+.punicaoBox .time span{
+    font-size: .875rem;
+}
+.punicaoBox summary{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.punicaoBox img{
+    border-radius: 3px;
+}
+.punicaoBox .details p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #ADADAD;
+}
+.punicaoBox .details span{
+    color: #fff;
+}
+.punicaoBox .punicaoDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 1.25rem 0 .625rem;
+    font-size: .9375rem;
+}
+.punicaoBox .punicaoDetails .date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.punicaoBox .punicaoDetails p{
+    color: #fff;
+}
+.punicaoBox .punicaoDetails span{
+    color: #ADADAD;
+}
+
+.punicoesContainer .right-container{
+    max-width: 300px;
+    width: 100%;
+}
+.punicoesPage .right-box{
+    padding: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.punicoesPage .right-box img{
+    margin-bottom: .9375rem;
+}
+.punicoesPage .right-box h4{
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+.punicoesPage .right-box input{
+    width: 100%;
+    padding: .625rem .9375rem;
+    border: 0;
+    outline: 0;
+    background: #292929;
+    border-radius: 3px;
+    color: #fff;
+    margin-top: .9375rem;
+}
+.punicoesPage .right-box input::placeholder{
+    font-size: .75rem;
+    color: #ADADAD;
+}
+.punicoesContainer .punicoesStats{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    margin-top: .9375rem;
+}
+.punicoesContainer .punicoesStat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .875rem;
+}
+.punicoesContainer .punicoesStat p{
+    font-size: .875rem;
+    max-width: none;
+    width: auto;
+}

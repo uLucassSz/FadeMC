@@ -1,0 +1,46 @@
+footer{
+    background: rgba(27, 27, 27, 0.48);
+    margin-top: 4.375rem;
+}
+footer .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.875rem;
+}
+.link-actions ul{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.link-actions ul li a{
+    font-size: 1.125rem;
+    color: #fff;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.socials i,
+.socials img{
+    cursor: pointer;
+}
+.socials .discord{
+    background: #5662F6;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.5625rem;
+    color: #fff;
+}
+footer .line{
+    width: 100%;
+    height: 1px;
+    background: #1E1E1E;
+}
+footer p{
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    padding: 25px;
+}
